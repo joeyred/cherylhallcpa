@@ -119,9 +119,9 @@ gulp.task('concatScripts', function() {
 
 /* Watch Task */
 gulp.task('watch', ['browserSync'], function() {
-	gulp.watch('src/scss/**/*.scss', ['compileSass']);
-  gulp.watch('src/js/**/*.js', ['concatScripts']).on('change', browserSync.reload);
-  gulp.watch('src/imgs/**/*', ['devImages']).on('change', browserSync.reload);
+	gulp.watch('src/assets/scss/**/*.scss', ['compileSass']);
+  gulp.watch('src/assets/js/**/*.js', ['concatScripts']).on('change', browserSync.reload);
+  gulp.watch('src/assets/imgs/**/*', ['devImages']).on('change', browserSync.reload);
 	gulp.watch(['src/data/**/*', 'src/helpers/**/*', 'src/layouts/**/*', 'src/pages/**/*', 'src/partials/**/*'], ['reloadPages']).on('change', browserSync.reload);
 });
 
