@@ -17,6 +17,6 @@
   ],
   "dependencies": {
     "jquery": "^3.1.0",
-    "sanitize.css": "^2.0.0"
+    "sanitize-css": "^4.1.0"
   }
 }
